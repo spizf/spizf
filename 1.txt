@@ -1,1 +1,6 @@
-test1
+Atom快捷键
+ctrl-shift-o打开目录
+ctrl-\显示/隐藏目录树
+ctrl-t或ctrl-p 查找文件
+ctrl-b 在打开的文件之间切换
+ctrl-shift-b 只搜索从上次git  commit后修改或者新增的文见

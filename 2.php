@@ -6,3 +6,14 @@
  * @Last Modified time: 2015-12-18 21:01:16
  */
 phpinfo();
+/**
+ *
+ */
+class ClassName extends AnotherClass
+{
+
+    function __construct(argument)
+    {
+        echo "string";
+    }
+}
