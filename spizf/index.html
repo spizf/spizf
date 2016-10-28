@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<hread>
+    <title>
+        说说说说，说你爱我。
+    </title>
+</hread>
+<meta charset="utf-8">
+<script type="text/javascript" src="./js/jquery.min.js" ></script>
+<link rel="stylesheet" href="css/ix.css" media="screen" type="text/css" />
+<style>
+    .bdiv{background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(245, 245, 245); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; background-position: initial initial; background-repeat: initial initial; }
+</style>
+<script>
+    function check()
+    {
+        var sorry = $('#sorry').val();
+        if(sorry == '我爱你')
+        {
+            alert('态度不错，准备跳转...');
+            window.location.href="./1.html";
+
+        }
+        else
+        {
+            alert('你是什么态度？打屎你！');
+        }
+    }
+</script>
+<style>
+    body{ font-family:"Microsoft YaHei",Arial;font-size:12px;
+          background-color: #deebef;
+    }
+    a {
+        outline:none;
+        blr:expression(this.onFocus=this.blur());
+        text-decoration:none;
+    }
+
+</style>
+<body>
+<div class="zhong">
+    <img src="./images/sorrybg.jpg" border="0" />
+
+    <input id="sorry" style="float:left; height:30px; width:350px; line-height:30px; color:#CCC; font-size: 16px;" type="text" class="bdiv gray" value="--说“我爱你”--" onfocus="this.className='bdiv';if (this.value=='--说“我爱你”--') {this.value=''}" onblur="if(this.value==''){this.className+=' gray';this.value='--说“我爱你”--'}">
+    <input id="check" class="bdiv" style="float: right; font-size: 16px; height:30px; width:100px;" type="button" value="注意态度" onclick="check()">
+
+</div>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+    var jiathis_config={
+        data_track_clickback:true,
+        summary:"",
+        appkey:{
+            "tsina":"2983735413",
+            "tqq":"801352704",
+            "qzone":"100442690",
+        },
+        showClose:true,
+        shortUrl:false,
+        hideMore:false
+    }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1773469&type=left&btn=l.gif&move=1" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<iframe frameborder="0" scrolling="no" allowtransparency="true" style="background-color=transparent" src="123.html" width="100%" height="570px"></iframe>
+</body>
+</html>

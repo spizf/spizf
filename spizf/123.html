@@ -1,0 +1,60 @@
+<HTML>
+    <HEAD>
+    <title>love</title>
+    </HEAD>
+    <body scroll=no onload=zyva()>
+    <div id=aqua style="position:absolute; left=0;top=0;"></div>
+    <IMG id=B src="images/logo1.png" style="display:none">
+    <SCRIPT>
+    object = new Array()
+    var xm,ym
+    function CObj(N,obj){
+    aqua.insertAdjacentHTML("AfterBegin","<img style='position:absolute;left:-1000;' src='"+obj.src+"'>")
+    this.img = aqua.firstChild.style
+    mr = Math.random()
+    this.v = 6*mr+4
+    this.s = .5*mr
+    this.p = .1+mr
+    this.w = 0
+    this.k = 0
+    this.x = xm
+    this.y = N
+    this.ChteuMeulEu = function ChteuMeulEu(){
+    with(this){
+    with(img){
+    left  = (x+=0.5*v*Math.sin(k+=s))-w*0.5
+    top   = y-=v
+    width = Math.min(w+=p,100)
+    }
+    if(y<-w){
+    w = 8
+    y = ym
+    x = xm
+    }
+    }
+    }
+    }
+    function gradient(R,G,B,m){
+    for(i=0;i<25;i++){
+    c = 255 - 10 * i
+    C = "\"RGB("+Math.round(c*R/255)+","+Math.round(c*G/255)+","+Math.round(c*B/255)+")\""
+    code = "<span style='position:absolute;font-size:1pt;left=0;width=120%;height="+(m)+".2%;top="+(i*m)+"%;background="+C+";z-Index:-1000'></span>"
+    document.body.insertAdjacentHTML("beforeEnd",code)
+    }
+    }
+    function zyva(){
+    xm = document.body.offsetWidth * 0.5
+    ym = document.body.offsetHeight
+    document.onmousemove = function (){
+    xm = window.event.clientX
+    ym = window.event.clientY
+    }
+    for(i=0;i<60;i++)object[i] = new CObj(i,B)
+    setInterval("for(i in object)object[i].ChteuMeulEu()",16)
+    gradient(41,93,214,2)
+    }
+    </SCRIPT>
+    </BODY>
+    </HTML>
+
+    
